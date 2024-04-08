@@ -73,4 +73,11 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method     = :letter_opener
+  config.action_mailer.perform_deliveries  = true
+  # If using a Vagrant VM for development, allow the host machine to see the
+  # detailed exceptions provided by the better-errors gem
+  BetterErrors::Middleware.allow_ip! '10.0.2.2'
+
 end

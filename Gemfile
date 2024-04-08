@@ -55,6 +55,10 @@ group :development, :test do
 
   gem "dotenv-rails"
   gem "pry-rails"
+  # rails generate rspec:install, rails generate rspec:model user
+  gem "rspec-rails", "~> 6.0.2"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
@@ -70,10 +74,17 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 
   gem "hotwire-livereload"
+  gem "better_errors"
+  gem "binding_of_caller"
+  # Open "sent" e-mails in your browser instead of actually sending them
+  # https://github.com/ryanb/letter_opener
+  gem "letter_opener"
+
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "shoulda-matchers"
 end
