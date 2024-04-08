@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html class="dark">
   <head>
-    <title><%= content_for?(:title) ? ("#{yield(:title)} - Josh Pigford").html_safe : "Josh Pigford" %></title>
+    <title><%= content_for?(:title) ? ("#{yield(:title)} - Malachai Frazier").html_safe : "Malachai Frazier" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <meta name="title" content="<%= content_for?(:title) ? ("#{yield(:title)} - Josh Pigford").html_safe : "Josh Pigford" %>">
-    <meta name="description" content="<%= content_for?(:description) ? (yield(:description)) : "Josh Pigford: Dabbler. Co-founder and CEO of Maybe." %>">
+    <meta name="title" content="<%= content_for?(:title) ? ("#{yield(:title)} - Malachai Frazier").html_safe : "Malachai Frazier" %>">
+    <meta name="description" content="<%= content_for?(:description) ? (yield(:description)) : "Malachai Frazier: Creative. Ruby on Rails Mechanic." %>">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="<%= content_for?(:title) ? ("#{yield(:title)} - Josh Pigford").html_safe : "Josh Pigford" %>">
-    <meta property="og:description" content="<%= content_for?(:description) ? (yield(:description)) : "Josh Pigford: Dabbler. Co-founder and CEO of Maybe." %>">
-    <meta property="og:image" content="<%= image_url(content_for?(:meta_image) ? yield(:meta_image) : "meta.png") %>">
+    <meta property="og:title" content="<%= content_for?(:title) ? ("#{yield(:title)} - Malachai Frazier").html_safe : "Malachai Frazier" %>">
+    <meta property="og:description" content="<%= content_for?(:description) ? (yield(:description)) : "Malachai Frazier: Creative. Ruby on Rails Mechanic." %>">
+    <meta property="og:image" content="<%= image_url(content_for?(:meta_image) ? yield(:meta_image) : "https://pbs.twimg.com/profile_images/1774581942937116672/NDdfn15o_400x400.jpg") %>">
     <%= yield :meta %>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="<%= content_for?(:title) ? ("#{yield(:title)} - Josh Pigford").html_safe : "Josh Pigford" %>">
-    <meta property="twitter:description" content="<%= content_for?(:description) ? (yield(:description)) : "Josh Pigford: Dabbler. Co-founder and CEO of Maybe." %>">
-    <meta property="twitter:image" content="<%= image_url(content_for?(:meta_image) ? yield(:meta_image) : "meta.png") %>">
+    <meta property="twitter:title" content="<%= content_for?(:title) ? ("#{yield(:title)} - Malachai Frazier").html_safe : "Malachai Frazier" %>">
+    <meta property="twitter:description" content="<%= content_for?(:description) ? (yield(:description)) : "Malachai Frazier: Creative. Ruby on Rails Mechanic." %>">
+    <meta property="twitter:image" content="<%= image_url(content_for?(:meta_image) ? yield(:meta_image) : "https://pbs.twimg.com/profile_images/1774581942937116672/NDdfn15o_400x400.jpg") %>">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -48,7 +48,7 @@
       <a href="/" class="text-6xl font-semibold text-right text-gold-500 hover:text-gold-400 w-14">&#10626;&#10650;</a>
       <div>
         <header class="mb-10 font-serif prose dark:prose-invert max-w-none">
-          <h1 class="mb-3 text-6xl font-light tracking-tight">Josh Pigford</h1>
+          <h1 class="mb-3 text-6xl font-light tracking-tight">Malachai Frazier</h1>
 
           <p class="text-xl">
             <%= link_to "Home", root_path %> / <%= link_to "Articles", articles_path %> / <%= link_to "Projects", projects_path %> / <%= link_to "Investments", investments_path %> / <%= link_to "Podcasts", podcasts_path %> / <%= link_to "Books", books_path %>
@@ -59,7 +59,7 @@
         </div>
         <footer class="my-12 font-serif text-sm prose text-gray-400 dark:prose-invert">
           <p>
-            This thing is <a href="https://github.com/Shpigford/joshpigford.com">open source</a>, for better or worse.
+            This thing is <a href="https://github.com/malachaifrazier/new-malachai.xyz">open source</a>, for better or worse.
           </p>
         </footer>
       </div>
