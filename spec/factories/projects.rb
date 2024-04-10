@@ -5,7 +5,7 @@ FactoryBot.define do
     year { Faker::Number.number(digits: 4) }
     description { Faker::Lorem.sentence }
     outcome { Faker::Lorem.sentence }
-    notes { Faker::Lorem.sentence }
-    link { Faker::Internet.url }
+    # notes { Faker::Lorem.sentence }
+    # link { Faker::Internet.url }
   end
 end
