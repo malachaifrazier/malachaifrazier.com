@@ -26,7 +26,7 @@ After you have cloned this repo, follow these steps to run the app:
     You should now be able to view your app at <http://localhost:3000>.
 
 
-## TODO
+## Task TODOs
 
 - [x] Add rspec tests
 - [x] Swap out the Josh named stuff for my stuff
@@ -35,28 +35,36 @@ After you have cloned this repo, follow these steps to run the app:
 - [ ] Add a link to my Resume/CV
 - [ ] Add a link to my LinkedIn
 - [ ] Add a link to my GitHub
+- [ ] Decide on a a color scheme
+- [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
+- [ ] Update Porkbun DNS settings
+
+## Future Features
+
 - [ ] Create a Technical Interviews page with:
   - [ ] A list of questions
   - [ ] A list of resources
   - [ ] A list of tips
+
 - [ ] Add a Services page for:
   - [ ] Rails Development
   - [ ] Handyman Services
+
 - [ ] Update Book:
   - [ ] Add author and genre
   - [ ] Build filter
   - [ ] Scope for comics and graphic novels
-  - [ ] Scope for audiobooks
-  - [ ] Scope for short stories
-  - [ ] Scope for poetry
   - [ ] Scope for novels
+
+- [ ] Create a Tools/Resources page with:
+  - [ ] A list of tools/services/products I use and love
+  - [ ] A list of resources
+  - [ ] A list of tips
+
 - [ ] Integrate with Cal.com for scheduling (low priority)
 - [ ] Add a Creative Writing page
 - [ ] Do something about theinfernotimes icons
 - [ ] Add a Music page
-- [ ] Add a contact form? Maybe?
+- [ ] Add a Contact form? Maybe?
 - [ ] Add a Newsletter? Maybe?
-- [ ] Decide on a a color scheme
-- [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
-- [ ] Update Porkbun DNS settings
 
