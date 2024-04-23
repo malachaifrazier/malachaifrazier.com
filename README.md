@@ -33,9 +33,9 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Un-generate the Josh-specific DB stuff
 - [x] Remove the registration route
 - [x] Update all the copy in my voice
-- [ ] Add a link to my Resume/CV
-- [ ] Add a link to my LinkedIn
-- [ ] Add a link to my GitHub
+- [x] Add a link to my Resume/CV
+- [x] Add a link to my LinkedIn
+- [x] Add a link to my GitHub
 - [ ] Decide on a a color scheme
 - [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
 - [ ] Update Porkbun DNS settings
