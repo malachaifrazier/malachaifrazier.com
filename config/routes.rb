@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resource :registration
+  # resource :registration
   resource :session
 
   resources :articles
