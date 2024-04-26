@@ -42,6 +42,7 @@ After you have cloned this repo, follow these steps to run the app:
 - [ ] Write deployment instructions for the chosen hosting provider in the README
 - [ ] Seed Projects
 - [ ] Seed Books
+- [ ] Seed Articles
 
 
 ## Future Features
@@ -52,16 +53,23 @@ After you have cloned this repo, follow these steps to run the app:
   - [ ] A list of tips
   - [ ] Seed Technical Interviews
 
-- [ ] Add a Services page for:
+- [ ] Create a Writings page with:
+  - [ ] Poetry
+  - [ ] Short Stories
+  - [ ] Comic book manuscripts
+
+- [ ] Create a Services page for:
   - [ ] Rails Development
   - [ ] Handyman Services
   - [ ] Seed Services
 
 - [ ] Update Book:
-  - [ ] Add author and genre
+  - [ ] Add author and genre for novels
+  - [x] Add Comics category
+  - [ ] Add Comics creative team; writer, artist, colorist, letterer
+  - [ ] Add cover image
+  - [ ] Add a link to the book on Amazon
   - [ ] Book filter
-  - [ ] Scope for comics and graphic novels
-  - [ ] Scope for novels
 
 - [ ] Create a Tools/Resources page with:
   - [ ] A list of tools/services/products I use and love

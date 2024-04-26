@@ -28,3 +28,11 @@
     </li>
   <% end %>
 </ul>
+
+<h2>Comics</h2>
+<ul>
+  <% @comics.each do |book| %>
+    <li>
+      <%= link_to book.title, book.link %>
+    </li>
+  <% end %>

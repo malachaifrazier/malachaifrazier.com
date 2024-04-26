@@ -4,6 +4,7 @@ class BooksController < ApplicationController
   def index
     @fiction = Book.where(category: "Fiction").order(title: :asc)
     @nonfiction = Book.where(category: "Nonfiction").order(title: :asc)
+    @comics = Book.where(category: "Comics").order(title: :asc)
   end
 
   def new
