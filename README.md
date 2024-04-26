@@ -59,7 +59,7 @@ After you have cloned this repo, follow these steps to run the app:
 
 - [ ] Update Book:
   - [ ] Add author and genre
-  - [ ] Build filter
+  - [ ] Book filter
   - [ ] Scope for comics and graphic novels
   - [ ] Scope for novels
 
