@@ -38,20 +38,20 @@
     <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body class="dark:bg-black dark:text-white">
+  <body class="dark:bg-violet-800 dark:text-white">
     <% if user_signed_in? %>
       <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
         <%= button_to "Sign out", session_path, method: :delete %>
       </div>
     <% end %>
     <div class="items-start gap-4 p-8 md:flex md:py-20">
-      <a href="/" class="text-6xl font-semibold text-right text-gold-500 hover:text-gold-400 w-14">&#9709;</a>
+      <a href="/" class="text-6xl font-semibold text-right text-gold-500 hover:text-red-600 w-14">&#9709;</a>
       <div>
         <header class="mb-10 font-serif prose dark:prose-invert max-w-none">
           <h1 class="mb-3 text-6xl font-light tracking-tight">Malachai Frazier</h1>
 
           <p class="text-xl">
-            <%= link_to "Home", root_path %> / <%= link_to "Articles", articles_path %> / <%= link_to "Projects", projects_path %> / <%= link_to "Books", books_path %>
+            <%= link_to "Home", root_path %> /  <%= link_to "Projects", projects_path %> / <%= link_to "Articles", articles_path %> / <%= link_to "Books", books_path %>
           </p>
         </header>
         <div class="font-serif prose dark:prose-invert <%= 'max-w-full w-full' if @full_width == true %>">
@@ -59,7 +59,7 @@
         </div>
         <footer class="my-12 font-serif text-sm prose text-gray-400 dark:prose-invert">
           <p>
-            This thing is <a href="https://github.com/malachaifrazier/new-malachai.xyz">open source</a>, for better or worse.
+            This lil app is <a href="https://github.com/malachaifrazier/new-malachai.xyz">open source</a>, for better or worse.
             &copy; Malachai Frazier <%= Date.today.year %>
           </p>
 

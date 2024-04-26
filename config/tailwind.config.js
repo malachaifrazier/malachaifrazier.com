@@ -11,11 +11,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        serif: ["Gambarino-Regular", ...defaultTheme.fontFamily.serif],
+        serif: ["Satoshi-Regular", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         white: "#F0EFEA",
-        black: "#1B1A19",
+        black: "#302a24", //"#1B1A19",
         gold: {
           "50": "#ffffe7",
           "100": "#ffffc1",

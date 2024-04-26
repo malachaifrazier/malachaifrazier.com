@@ -1,6 +1,5 @@
 # Codebase for https://malachai.xyz forked from https://joshpigford.com
 
-
 ## Setup
 
 After you have cloned this repo, follow these steps to run the app:
@@ -36,15 +35,15 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Add a link to my Resume/CV
 - [x] Add a link to my LinkedIn
 - [x] Add a link to my GitHub
-- [ ] Decide on a new color scheme
+- [x] Decide on a new color scheme
 - [x] Update the fonts
+- [ ] Update with new domain
 - [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
 - [ ] Update Porkbun DNS settings
 - [ ] Write deployment instructions for the chosen hosting provider in the README
 - [ ] Seed Projects
 - [ ] Seed Books
 - [ ] Seed Articles
-
 
 ## Future Features
 
@@ -84,4 +83,3 @@ After you have cloned this repo, follow these steps to run the app:
 - [ ] Do something about theinfernotimes icons
 - [ ] Add a Contact form? Maybe?
 - [ ] Add a Newsletter? Maybe?
-
