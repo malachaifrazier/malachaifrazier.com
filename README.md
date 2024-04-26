@@ -36,7 +36,8 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Add a link to my Resume/CV
 - [x] Add a link to my LinkedIn
 - [x] Add a link to my GitHub
-- [ ] Decide on a a color scheme
+- [ ] Decide on a new color scheme
+- [x] Update the fonts
 - [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
 - [ ] Update Porkbun DNS settings
 - [ ] Write deployment instructions for the chosen hosting provider in the README
@@ -77,10 +78,10 @@ After you have cloned this repo, follow these steps to run the app:
   - [ ] A list of tips
   - [ ] Seed Tools/Resources
 
+- [ ] Create a sitemap.xml, robots.txt, humans.txt
+- [ ] Create a Music page
 - [ ] Integrate with Cal.com for scheduling (low priority)
-- [ ] Add a Creative Writing page
 - [ ] Do something about theinfernotimes icons
-- [ ] Add a Music page
 - [ ] Add a Contact form? Maybe?
 - [ ] Add a Newsletter? Maybe?
 

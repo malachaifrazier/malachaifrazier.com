@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('satoshi.css');
 
 .prose a,
 .thick-link {
@@ -23,12 +24,12 @@
 }
 
 @font-face {
-  font-family: "Gambarino-Regular";
-  src: url("Gambarino-Regular.eot");
-  src: url("Gambarino-Regular.eot?#iefix") format("embedded-opentype"),
-    url("Gambarino-Regular.woff2") format("woff2"),
-    url("Gambarino-Regular.woff") format("woff"),
-    url("Gambarino-Regular.ttf") format("truetype");
+  font-family: "Satoshi-Regular";
+  src: url("Satoshi-Regular.eot");
+  src: url("Satoshi-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Satoshi-Regular.woff2") format("woff2"),
+    url("Satoshi-Regular.woff") format("woff"),
+    url("Satoshi-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
