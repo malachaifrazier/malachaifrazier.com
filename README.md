@@ -38,6 +38,7 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Decide on a new color scheme
 - [x] Update the fonts
 - [x] Update with new domain
+- [ ] Add Analytics
 - [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
 - [ ] Update Porkbun DNS settings
 - [ ] Write deployment instructions for the chosen hosting provider in the README
@@ -64,7 +65,7 @@ After you have cloned this repo, follow these steps to run the app:
   - [ ] Seed Services
 
 - [ ] Update Book:
-  - [ ] Add author and genre for novels
+  - [x] Add author column
   - [x] Add Comics category
   - [ ] Add Comics creative team; writer, artist, colorist, letterer
   - [ ] Add cover image
