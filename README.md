@@ -54,11 +54,11 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Decide on a new color scheme
 - [x] Update the fonts
 - [x] Update with new domain
-- [ ] Add Analytics
+- [x] Add Analytics
 - [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
 - [ ] Update Porkbun DNS settings
 - [ ] Write deployment instructions for the chosen hosting provider in the README
-- [ ] Seed Projects
+- [x] Seed Projects
 - [ ] Seed Books
 - [ ] Seed Articles
 
@@ -70,12 +70,12 @@ After you have cloned this repo, follow these steps to run the app:
   - [ ] A list of tips
   - [ ] Seed Technical Interviews
 
-- [ ] Create a Writings page with:
+- [ ] *Create a Writings page with:
   - [ ] Poetry
   - [ ] Short Stories
   - [ ] Comic book manuscripts
 
-- [ ] Create a Services page for:
+- [ ] *Create a Services page for:
   - [ ] Rails Development
   - [ ] Handyman Services
   - [ ] Seed Services
