@@ -1,3 +1,7 @@
 class Book < ApplicationRecord
-  # TODO: Add author and genre to the book model
+  validates :title, :category, :author, presence: true
+
+  def title_and_author
+    "#{title} by #{author}"
+  end
 end

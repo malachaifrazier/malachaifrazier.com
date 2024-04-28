@@ -26,7 +26,7 @@ class BooksController < ApplicationController
   end
 
   def update
-    @book = Book.find_by(slug: params[:id])
+    @book = Book.find_by(id: params[:id])
 
     if @book.update(book_params)
       redirect_to books_path
@@ -44,6 +44,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :link, :category)
+    params.require(:book).permit(:title, :link, :category, :author)
   end
 end
