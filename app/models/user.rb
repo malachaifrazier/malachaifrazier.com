@@ -3,4 +3,6 @@ class User < ApplicationRecord
 
   validates :email, presence: true
   normalizes :email, with: -> (email) { email.strip.downcase }
+  has_many :visits, class_name: "Ahoy::Visit"
+
 end

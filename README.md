@@ -24,6 +24,22 @@ After you have cloned this repo, follow these steps to run the app:
 
     You should now be able to view your app at <http://localhost:3000>.
 
+## Notes
+  You will run into this error if you try to run the server without precompiling the assets first:
+
+  ```
+    bin/rails aborted!
+    Errno::EINVAL: Invalid argument
+  ```
+
+  Go ahead and clear the tmp, then precompile the assets and then start the server or run migrations or whatever.
+
+  ```
+    bundle exec rake tmp:clear --trace
+    bundle exec rake assets:precompile
+    bundle exec rails command
+  ```
+
 
 ## Task TODOs
 

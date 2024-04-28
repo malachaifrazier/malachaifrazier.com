@@ -11,6 +11,7 @@ class RegistrationsController < ApplicationController
     @user = User.new(registration_params)
     if @user.save
       login @user
+      ahoy.authenticate(@user)
       redirect_to root_path
     else
       render :new, status: :unprocessable_entity
