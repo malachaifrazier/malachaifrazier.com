@@ -1,4 +1,4 @@
-# Codebase for https://malachai.xyz forked from https://joshpigford.com
+# Codebase for https://malachaifrazier.com forked from https://joshpigford.com
 
 ## Setup
 
@@ -37,7 +37,7 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Add a link to my GitHub
 - [x] Decide on a new color scheme
 - [x] Update the fonts
-- [ ] Update with new domain
+- [x] Update with new domain
 - [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
 - [ ] Update Porkbun DNS settings
 - [ ] Write deployment instructions for the chosen hosting provider in the README
