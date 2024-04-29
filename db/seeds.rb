@@ -38,3 +38,23 @@ projects.each do |project|
   end
 end
 puts "#{Project.count} Projects created! Seeding complete!"
+
+#Seed books
+
+books = [
+  { title: "Blood Meridian", author: "Cormac McCarthy", category: "Fiction", link: "https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West" },
+  { title: "John Dies at the End", author: "Jason Pargin", category: "Fiction", link: "https://www.goodreads.com/book/show/1857440.John_Dies_at_the_End"},
+  { tittle: "This Book Is Full of Spiders", author: "Jason Pargin", category: "Fiction", link: "https://www.goodreads.com/book/show/12924261-this-book-is-full-of-spiders"},
+  { title: "LOCAL MAN", author: "TONY FLEECS and TIM SEELEY", category: "Comics", link: "https://imagecomics.com/comics/series/local-man"},
+  { title: "Pulp", author: "Ed Brubaker", category: "Comics", link: "https://imagecomics.com/comics/series/pulp"},
+]
+
+puts "Seeding the database with #{books.count} books"
+books.each do |book|
+  Book.find_or_create_by(title: book[:title]) do |b|
+    b.author = book[:author]
+    b.category = book[:category]
+    b.link = book[:link]
+  end
+end
+puts "#{Book.count} Books created! Seeding complete!"

@@ -15,7 +15,7 @@
 <ul>
   <% @fiction.each do |book| %>
     <li>
-      <%= link_to book.title_and_author, book.link %>
+      <%= link_to book.title_and_author, book.link, target: "_blank" %>
       <% if user_signed_in? %>
         <%= link_to 'Edit', edit_book_path(book), class: 'text-blue-500 no-thick-link' %>
         <%= button_to 'Delete', book_path(book), method: :delete, data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, class: 'text-red-500' %>
@@ -28,7 +28,7 @@
 <ul>
   <% @nonfiction.each do |book| %>
     <li>
-      <%= link_to book.title_and_author, book.link %>
+      <%= link_to book.title_and_author, book.link, target: "_blank" %>
       <% if user_signed_in? %>
         <%= link_to 'Edit', edit_book_path(book), class: 'text-blue-500 no-thick-link' %>
         <%= button_to 'Delete', book_path(book), method: :delete, data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, class: 'text-red-500' %>
@@ -41,7 +41,7 @@
 <ul>
   <% @comics.each do |book| %>
     <li>
-      <%= link_to book.title_and_author, book.link %>
+      <%= link_to book.title_and_author, book.link, target: "_blank" %>
       <% if user_signed_in? %>
         <%= link_to 'Edit', edit_book_path(book), class: 'text-blue-500 no-thick-link' %>
         <%= button_to 'Delete', book_path(book), method: :delete, data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, class: 'text-red-500' %>

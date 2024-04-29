@@ -98,7 +98,7 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Update Porkbun DNS settings
 - [x] Write deployment instructions in the README
 - [x] Seed Projects
-- [ ] Seed Books
+- [x] Seed Books
 - [ ] Seed Articles
 
 ## Future Features
