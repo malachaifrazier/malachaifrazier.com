@@ -40,6 +40,45 @@ After you have cloned this repo, follow these steps to run the app:
     bundle exec rails command
   ```
 
+## How to deploy to Fly.io
+  This is the documentation link: https://fly.io/docs/getting-started/rails/
+
+  1. Provision Rails and Postgres Servers:
+    To configure and launch your Rails app, you can use fly launch and follow the wizard. This will create a new app on Fly, provision a Postgres database, and configure your app to use it.
+    ```
+    flyctl launch
+    ```
+
+  2. Deploy your application:
+    ```
+    flyctl deploy
+    ```
+    This will take a few seconds as it uploads your application, builds a machine image, deploys the images, and then monitors to ensure it starts successfully. Once complete visit your app with the following command:
+    ```
+    flyctl open
+    ```
+    If all went well, you’ll see your Rails application homepage.
+
+  3. View log files:
+    ```
+    flyctl logs
+    ```
+    This shows the past few log file entries and tails your production log files.
+    Rails stack tracebacks can be lengthy, and the information you often want to see is at the top. If not enough information is available in the `fly logs` command, try running `fly dashboard`, and select `Monitoring` in the left hand column.
+
+  4. Open a Rails console:
+    ```
+    flyctl console
+    ```
+    or
+    ```
+    flyctl ssh console
+    ```
+    If you are running with sqlite3 or a volume, you will need to ssh into an existing machine. You may need to first make sure that you have enough memory to accommodate the additional session.
+    ```
+    fly ssh console --pty -C "/rails/bin/rails console"
+    ```
+
 
 ## Task TODOs
 
@@ -55,9 +94,9 @@ After you have cloned this repo, follow these steps to run the app:
 - [x] Update the fonts
 - [x] Update with new domain
 - [x] Add Analytics
-- [ ] Choose a hosting provider: Heroku, Digital Ocean, Fly.io, etc.
-- [ ] Update Porkbun DNS settings
-- [ ] Write deployment instructions for the chosen hosting provider in the README
+- [x] Choose a hosting provider: Fly.io
+- [x] Update Porkbun DNS settings
+- [x] Write deployment instructions in the README
 - [x] Seed Projects
 - [ ] Seed Books
 - [ ] Seed Articles

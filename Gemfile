@@ -83,6 +83,7 @@ group :development do
   # Open "sent" e-mails in your browser instead of actually sending them
   # https://github.com/ryanb/letter_opener
   gem "letter_opener"
+  gem "dockerfile-rails", ">= 1.6"
 
 end
 
