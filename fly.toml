@@ -17,7 +17,7 @@ console_command = '/rails/bin/rails console'
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
-  min_machines_running = 0
+  min_machines_running = 1
   processes = ['app']
 
 [checks]
@@ -43,3 +43,7 @@ console_command = '/rails/bin/rails console'
 [[statics]]
   guest_path = '/rails/public'
   url_prefix = '/'
+
+[env]
+  LOG_LEVEL = "debug"
+  RAILS_ENV = "production"
