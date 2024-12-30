@@ -38,7 +38,7 @@
     <%#= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body class="dark:bg-violet-800 dark:text-white">
+  <body class="dark:bg-slate-800 dark:text-white">
     <% if user_signed_in? %>
       <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
         <%= button_to "Sign out", session_path, method: :delete %>
