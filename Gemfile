@@ -52,11 +52,9 @@ gem "redcarpet"
 # Simple, powerful, first-party analytics for Rails: https://github.com/ankane/
 gem "ahoy_matey"
 
-
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
-
   gem "dotenv-rails"
   gem "pry-rails"
   # rails generate rspec:install, rails generate rspec:model user
