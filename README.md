@@ -103,12 +103,6 @@ After you have cloned this repo, follow these steps to run the app:
 
 ## Future Features
 
-- [ ] Create a Technical Interviews page with:
-  - [ ] A list of questions
-  - [ ] A list of resources
-  - [ ] A list of tips
-  - [ ] Seed Technical Interviews
-
 - [ ] *Create a Writings page with:
   - [ ] Poetry
   - [ ] Short Stories

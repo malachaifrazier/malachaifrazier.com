@@ -103,24 +103,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_28_140150) do
     t.string "author"
   end
 
-  create_table "investments", force: :cascade do |t|
-    t.string "company"
-    t.integer "year"
-    t.integer "amount"
-    t.text "about"
-    t.string "status"
-    t.string "link"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "podcasts", force: :cascade do |t|
-    t.string "name"
-    t.string "link"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "slug"
@@ -129,21 +111,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_28_140150) do
     t.text "outcome"
     t.text "notes"
     t.string "link"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "toys", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "artist"
-    t.string "manufacturer"
-    t.date "release_date"
-    t.string "size"
-    t.string "platform"
-    t.string "color"
-    t.string "series"
-    t.integer "original_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
