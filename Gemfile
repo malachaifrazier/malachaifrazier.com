@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-ruby "3.3.4"
+ruby "3.4.5"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1"
+gem "rails", "~> 8.1.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -11,7 +11,7 @@ gem "sprockets-rails"
 gem "pg"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", ">= 5.0"
+gem "puma", ">= 7.1.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -23,7 +23,9 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem "tailwindcss-rails"
+# If you are upgrading to tailwindcss-rails 4.x, please read the upgrade guide at:
+#   https://github.com/rails/tailwindcss-rails/blob/main/README.md#upgrading-your-application-from-tailwind-v3-to-v4
+  gem "tailwindcss-rails", "~> 3.3.1"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -58,9 +60,11 @@ group :development, :test do
   gem "dotenv-rails"
   gem "pry-rails"
   # rails generate rspec:install, rails generate rspec:model user
-  gem "rspec-rails", "~> 6.0.2"
+  gem "rspec-rails", "~> 8.0.2"
   gem "factory_bot_rails"
   gem "faker"
+  gem "simplecov", require: false
+
 end
 
 group :development do
@@ -81,7 +85,7 @@ group :development do
   # Open "sent" e-mails in your browser instead of actually sending them
   # https://github.com/ryanb/letter_opener
   gem "letter_opener"
-  gem "dockerfile-rails", ">= 1.6"
+  gem "dockerfile-rails", ">= 1.7.10"
 
 end
 
