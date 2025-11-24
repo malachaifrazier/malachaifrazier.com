@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # resource :registration
+  # devise_for :users
   resource :session
 
   resources :articles
