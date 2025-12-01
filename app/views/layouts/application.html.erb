@@ -43,6 +43,15 @@
       <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
         <%= button_to "Sign out", session_path, method: :delete %>
       </div>
+    <% else %>
+      <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
+        <%= link_to "Sign in", new_session_path %>
+      </div>
+    <% end %>
+    <% if user_signed_in? %>
+      <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
+        <%= button_to "Sign out", session_path, method: :delete %>
+      </div>
     <% end %>
     <div class="items-start gap-4 p-8 md:flex md:py-20">
       <a href="/" class="text-6xl font-semibold text-right text-gold-500 hover:text-red-600 w-14">&#9709;</a>

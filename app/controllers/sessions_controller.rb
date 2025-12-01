@@ -1,10 +1,12 @@
 class SessionsController < ApplicationController
   def new
     @user = User.new || super
+    redirect_to root_path and return if user_signed_in?
+    # binding.pry
   end
 
   def create
-    if @user = User.authenticate_by(email: params[:email], password: params[:password])
+    if @user = User.authenticate_by(email: params[:user][:email], password: params[:user][:password])
       login @user
       redirect_to root_path
     else
