@@ -2,7 +2,6 @@ class SessionsController < ApplicationController
   def new
     @user = User.new || super
     redirect_to root_path and return if user_signed_in?
-    # binding.pry
   end
 
   def create

@@ -5,6 +5,11 @@ module ApplicationHelper
   end
 
   def markdown(text)
+    # Convert ActionText::RichText to plain text if needed
+    text = text.to_plain_text if text.respond_to?(:to_plain_text)
+    # Ensure it's a string
+    text = text.to_s
+    
     options = {
       filter_html:     true,
       hard_wrap:       true,
