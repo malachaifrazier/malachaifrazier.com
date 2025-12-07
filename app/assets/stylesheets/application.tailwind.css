@@ -3,7 +3,43 @@
 @tailwind utilities;
 @import url('satoshi.css');
 
-.prose a,
+/* Custom font stack - monospace for UI chrome, sans for content */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* .font-mono {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+} */
+
+/* Smooth transitions */
+.transition-opacity {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Override any default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.underline {
+  text-decoration: underline;
+}
+
+/* Ensure proper spacing on all viewports */
+@media (max-width: 640px) {
+  .px-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+}
+
+/* .prose a,
 .thick-link {
   text-decoration: none;
   background-image: linear-gradient(90deg, #ffd100 0%, #ffd100 100%);
@@ -21,7 +57,7 @@
   text-decoration: none !important;
   background-image: none !important;
   transition: none !important;
-}
+} */
 
 @font-face {
   font-family: "Satoshi-Regular";

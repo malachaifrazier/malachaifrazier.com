@@ -1,0 +1,31 @@
+<nav class="flex items-center justify-between mb-24 pb-6 border-b border-black">
+  <%= link_to root_path, class: "font-mono text-2xl tracking-tight hover:opacity-50 transition-opacity" do %>
+    MF
+  <% end %>
+  
+  <div class="flex gap-8 font-mono text-sm">
+    <%= link_to "home", root_path, 
+        class: "hover:opacity-50 transition-opacity #{current_page?(root_path) ? 'underline' : ''}" %>
+    <%= link_to "projects", projects_path, 
+        class: "hover:opacity-50 transition-opacity #{current_page?(projects_path) ? 'underline' : ''}" %>
+    <%= link_to "articles", articles_path, 
+        class: "hover:opacity-50 transition-opacity #{current_page?(articles_path) ? 'underline' : ''}" %>
+    <%= link_to "books", books_path, 
+        class: "hover:opacity-50 transition-opacity #{current_page?(books_path) ? 'underline' : ''}" %>
+  </div>
+</nav>
+
+<% if user_signed_in? %>
+  <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
+    <%= button_to "Sign out", session_path, method: :delete %>
+  </div>
+<% else %>
+  <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
+    <%= link_to "Sign in", new_session_path %>
+  </div>
+<% end %>
+<% if user_signed_in? %>
+  <div class="absolute top-0 right-0 px-4 py-2 text-black bg-gold-400">
+    <%= button_to "Sign out", session_path, method: :delete %>
+  </div>
+<% end %>

@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
   # resource :registration
   # devise_for :users
+  root 'pages#home'
+
+  get 'up' => 'rails/health#show', as: :rails_health_check
+  
+  resources :projects#, only: [:index]
+  resources :articles#, only: [:index]
+  resources :books#, only: [:index]
   resource :session
-
-  resources :articles
-  resources :projects
-  resources :books
-
-  get "up" => "rails/health#show", as: :rails_health_check
-
-  root "pages#home"
 end

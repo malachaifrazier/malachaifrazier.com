@@ -4,6 +4,7 @@ RSpec.describe Article, type: :model do
   let(:article) { create(:article) }
 
   it 'is valid with valid attributes' do
+    # binding.pry
     expect(article).to be_valid
   end
 
@@ -11,6 +12,7 @@ RSpec.describe Article, type: :model do
     it { should validate_presence_of(:title) }
     it { should validate_presence_of(:slug) }
     it { should validate_presence_of(:body) }
+    it { should validate_presence_of(:excerpt) }
     it { should validate_presence_of(:publish_at) }
     it { should validate_uniqueness_of(:slug) }
   end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_12_01_194033) do
+ActiveRecord::Schema[8.1].define(version: 2025_12_07_180000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -98,6 +98,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_12_01_194033) do
   create_table "articles", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
+    t.text "excerpt", default: "", null: false
     t.datetime "publish_at"
     t.string "slug"
     t.string "title"
@@ -109,20 +110,26 @@ ActiveRecord::Schema[8.1].define(version: 2025_12_01_194033) do
     t.string "category"
     t.datetime "created_at", null: false
     t.string "link"
+    t.integer "position"
     t.string "title"
     t.datetime "updated_at", null: false
+    t.index ["position"], name: "index_books_on_position"
   end
 
   create_table "projects", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.text "description"
+    t.boolean "featured", default: false
     t.string "link"
     t.string "name"
     t.text "notes"
     t.text "outcome"
     t.string "slug"
+    t.string "tech_stack", default: [], array: true
     t.datetime "updated_at", null: false
     t.integer "year"
+    t.index ["featured"], name: "index_projects_on_featured"
+    t.index ["tech_stack"], name: "index_projects_on_tech_stack", using: :gin
   end
 
   create_table "users", force: :cascade do |t|

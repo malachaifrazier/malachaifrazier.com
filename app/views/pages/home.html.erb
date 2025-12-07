@@ -1,25 +1,71 @@
+<!-- app/views/pages/home.html.erb -->
 <% content_for :meta do %>
   <meta property="profile:first_name" content="Malachai">
   <meta property="profile:last_name" content="Frazier">
 <% end %>
 
-<div class="font-serif prose dark:prose-invert">
-  <p class="text-3xl">
-    Product-focused engineer & technical creative building, satirical media, community apps, micro apps, and a better life.
-    <%# Currently building <a target="_blank" href="https://comiccollab.com">ComicCollab</a>,
-    where comic book creators find each other. %>
+<div class="mb-32">
+  <h1 class="text-5xl font-bold mb-6 tracking-tight">
+    Malachai Frazier
+  </h1>
+  <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
+    Product-focused engineer & technical creative building satirical media, 
+    community apps, micro apps, and a better life.
   </p>
-  <p class="text-2xl">
-    You can find me on <a target="_blank" href="https://bsky.app/profile/malcreatesstuff.bsky.social">Bluesky</a>,
-    <a target="_blank" href="https://twitter.com/malcreatesstuff">X.com</a>,
-    <a target="_blank" href="https://github.com/malachaifrazier/">GitHub</a>, and
-    <a target="_blank" href="https://www.linkedin.com/in/malachaifrazier/">LinkedIn</a>. <br>
-    Get my latest Resume <a
-      target="_blank"
-      href="https://docs.google.com/document/d/1guXfyC6GUnj-31vumIZZvS_9eAWdWerZ0f8DZJ5ESsE/edit?usp=sharing">
-       Google Docs  here
-    </a>.
-  </p>
+</div>
+
+<div class="mb-32">
+  <h2 class="text-2xl font-bold mb-8 tracking-tight">Featured Work</h2>
+  <div class="space-y-12">
+    <% @featured_projects.each do |project| %>
+      <div class="border-l-2 border-black pl-6">
+        <h3 class="text-xl font-bold mb-2"><%= project.title %></h3>
+        <p class="text-gray-600 mb-3"><%= project.description %></p>
+        <div class="flex gap-3 font-mono text-xs">
+          <% project.tech_list.each do |tech| %>
+            <span class="px-2 py-1 border border-black">
+              <%= tech %>
+            </span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to "View all projects →", projects_path, 
+      class: "mt-8 font-mono text-sm hover:opacity-50 transition-opacity underline inline-block" %>
+</div>
+
+<div class="mb-32">
+  <h2 class="text-2xl font-bold mb-8 tracking-tight">Recent Writing</h2>
+  <div class="space-y-6">
+    <% @recent_articles.each do |article| %>
+      <div class="pb-6 border-b border-gray-300">
+        <div class="flex justify-between items-baseline mb-2">
+          <h3 class="text-lg font-bold"><%= article.title %></h3>
+          <span class="font-mono text-xs text-gray-500"><%= article.formatted_date %></span>
+        </div>
+        <p class="text-gray-600"><%= article.excerpt %></p>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to "View all articles →", articles_path, 
+      class: "mt-6 font-mono text-sm hover:opacity-50 transition-opacity underline inline-block" %>
+</div>
+
+<div class="mb-16">
+  <h2 class="text-2xl font-bold mb-6 tracking-tight">Connect</h2>
+  <div class="flex gap-6 font-mono text-sm">
+    <%= link_to "Bluesky", "https://bsky.app/profile/malcreatesstuff.bsky.social", 
+        class: "hover:opacity-50 transition-opacity underline" %>
+    <%= link_to "X", "https://twitter.com/malcreatesstuff", 
+        class: "hover:opacity-50 transition-opacity underline" %>
+    <%= link_to "GitHub", "https://github.com/malachaifrazier", 
+        class: "hover:opacity-50 transition-opacity underline" %>
+    <%= link_to "LinkedIn", "https://www.linkedin.com/in/malachaifrazier/", 
+        class: "hover:opacity-50 transition-opacity underline" %>
+    <%= link_to "Resume", "https://docs.google.com/document/d/1guXfyC6GUnj-31vumIZZvS_9eAWdWerZ0f8DZJ5ESsE/edit?usp=sharing", 
+        class: "hover:opacity-50 transition-opacity underline" %>
+  </div>
 </div>
 
 <script type="application/ld+json">

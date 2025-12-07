@@ -1,0 +1,22 @@
+<!-- app/views/books/index.html.erb -->
+<% title "Books" %>
+
+<h1 class="text-4xl font-bold mb-12 tracking-tight">Books</h1>
+
+<p class="text-xl text-gray-600 mb-12 leading-relaxed">
+  Books that shaped how I think about systems, design, and building things that matter.
+</p>
+
+<div class="grid gap-6">
+  <% @books.each_with_index do |book, index| %>
+    <div class="flex items-baseline gap-4 pb-6 border-b border-gray-300">
+      <span class="font-mono text-xs text-gray-500 w-8">
+        <%= (index + 1).to_s.rjust(2, '0') %>
+      </span>
+      <div>
+        <h3 class="text-lg font-bold"><%= book.title %></h3>
+        <p class="text-gray-600 font-mono text-sm"><%= book.author %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

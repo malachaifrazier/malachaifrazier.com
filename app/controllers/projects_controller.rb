@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all.order(year: :asc)
+    # @projects = Project.all.order(created_at: :desc)
     @full_width = true
   end
 
